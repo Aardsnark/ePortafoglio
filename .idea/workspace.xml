@@ -33,10 +33,10 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/user/Desktop/Corso/Python/OOP/Loi/16_09_Progetto_Anagrafe/cl_persona.py"
+    "last_opened_file_path": "C:/Users/user/Desktop/Corso/Python/OOP/Ingegneria_Software/05_09/test.py"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.Tests">
     <configuration name="Classes" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ePortafoglio" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -58,8 +58,34 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Tests" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ePortafoglio" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/docs/Code" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/docs/Code/Tests.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.Tests" />
+      <item itemvalue="Python.Classes" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Tests" />
         <item itemvalue="Python.Classes" />
       </list>
     </recent_temporary>
