@@ -39,6 +39,8 @@ class Cliente:
             estratto = myconto.estrattoconto
             print(estratto)
 
+    def bonifico(self, ):
+
 class Conto:
     def __init__(self, IBAN: str, balance: float, owner: Cliente):
         self.balance = balance
