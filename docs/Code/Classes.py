@@ -44,6 +44,9 @@ class Cliente:
             banca.bonificoesterno(amount)
         elif token == "interno":
             banca.giroconto(IBAN, amount)
+        else:
+            raise GenericError("Token non riconosciuto")
+            pass
 
 
 class Conto:
@@ -117,17 +120,17 @@ class ePortfolio:
             target = self.lista_conti[IBAN]
             oldbalance = target.balance
             newbalance = oldbalance + amount
-            print(f"Trasferico {amount} sul conto...")
+            print(f"Trasferisco {amount} sul conto...")
             target.balance = newbalance
         else:
             raise GenericError("Il conto non è interno a ePortfolio")
             pass
 
-    def bonificoesterno(self, amount: float):
+    def bonificoesterno(self, amount: float, IBAN: str):
         if amount < 0.0:
             raise ValueError("L'ammontare da trasferire deve essere positivo")
             pass
         else:
-            print(f"Invio un bonifico di {amount} al di fuori del circuito ePortfolio")
+            print(f"Invio un bonifico di {amount} all IBAN {IBAN} di fuori del circuito ePortfolio")
 
 
