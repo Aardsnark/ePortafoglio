@@ -160,8 +160,7 @@ specifications    </p>
 
 #### <a name="cd"></a>  4.1.1 Class diagram
 <details> 
-    <summary> Put a summary of the section
-    </summary>
+    ![ClassiEsame](https://github.com/Aardsnark/ePortafoglio/blob/main/docs/drs/imgs/ClassiEsame.png)
     <p>This sub section should describe ...</p>
 </details>
 
