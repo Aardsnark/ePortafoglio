@@ -160,7 +160,7 @@ specifications    </p>
 
 #### <a name="cd"></a>  4.1.1 Class diagram
 <details> 
-    [![ClassiEsame.png](https://github.com/Aardsnark/ePortafoglio/blob/main/docs/drs/imgs/ClassiEsame.png)]
+    ![ClassiEsame.png](https://github.com/Aardsnark/ePortafoglio/blob/main/docs/drs/imgs/ClassiEsame.png)
 </details>
 
 ##### <a name="cd-description"></a>  4.1.1.1 Class Description
@@ -172,12 +172,10 @@ specifications    </p>
 
 #### <a name="od"></a>  4.1.2 Object diagram
 <details> 
-	[![SequenzaEsame.png](https://github.com/Aardsnark/ePortafoglio/blob/main/docs/drs/imgs/SequenzaEsame.png)]
+	
 </details>
 
 #### <a name="dm"></a>  4.2 Dynamic Models
 <details> 
-    <summary> Put a summary of the section
-    </summary>
-    <p>This sub section should describe ...</p>
+    ![SequenzaEsame.png](https://github.com/Aardsnark/ePortafoglio/blob/main/docs/drs/imgs/SequenzaEsame.png)
 </details>
