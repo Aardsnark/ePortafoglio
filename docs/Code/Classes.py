@@ -39,7 +39,12 @@ class Cliente:
             estratto = myconto.estrattoconto
             print(estratto)
 
-    def bonifico(self, ):
+    def trasferimento(self, token: str, banca: ePortfolio, IBAN: str, amount: float):
+        if token == "esterno":
+            banca.bonificoesterno(amount)
+        elif token == "interno":
+            banca.giroconto(IBAN, amount)
+
 
 class Conto:
     def __init__(self, IBAN: str, balance: float, owner: Cliente):
@@ -104,18 +109,18 @@ class ePortfolio:
     def delCliente(self, doc: Cliente):
         self.lista_clienti.pop(doc.user)
 
-    def giroconto(self, targetConto: Conto, amount: float):
+    def giroconto(self, IBAN, amount: float):
         if amount < 0.0:
             raise ValueError("L'ammontare da trasferire deve essere positivo")
             pass
-        if targetConto.IBAN in self.lista_conti.keys():
-            target = self.lista_conti[targetConto.IBAN]
+        if IBAN in self.lista_conti.keys():
+            target = self.lista_conti[IBAN]
             oldbalance = target.balance
             newbalance = oldbalance + amount
             print(f"Trasferico {amount} sul conto...")
             target.balance = newbalance
         else:
-            raise GenericError(f"Il conto destinatario non esiste all'interno di ePortofolio")
+            raise GenericError("Il conto non è interno a ePortfolio")
             pass
 
     def bonificoesterno(self, amount: float):
