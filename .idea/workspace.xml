@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="d1bc59ec-2880-4afd-8f0d-73b069d0d236" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +33,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/user/Documents/GitHub/ePortafoglio"
+    "last_opened_file_path": "C:/Users/user/Desktop/Corso/Python/OOP/Loi/16_09_Progetto_Anagrafe/cl_persona.py"
   }
 }]]></component>
   <component name="RunManager">
