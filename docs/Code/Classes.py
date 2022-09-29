@@ -8,11 +8,11 @@ class GenericError(Error):
 class Interfaccia:
     def __int__(self, nome = "Interfaccia"):
         self.nome = nome
-    def send(self, amount:float, conto:Conto):
-        print(f"Invio un bonifico di {amount} al conto {conto.IBAN}")
+    def send(self, amount:float):
+        print(f"Invio un bonifico di {amount} al conto")
 
 class Cliente:
-    def __init__(self, user: str, pw: str, banca: ePortfolio):
+    def __init__(self, user: str, pw: str, banca):
         self.banca = banca
         self.user = user
         self.pw = pw
@@ -23,6 +23,10 @@ class Cliente:
 
     @user.setter
     def user(self, user):
+        if not isinstance(user, str):
+            raise TypeError("deve essere una stringa")
+        if len(user) < 2 or len(user) > 20:
+            raise GenericError(" la lunghezza dell'username deve essere fra 2 e 20 caratteri")
         self.__user = user
 
     @property
@@ -31,15 +35,27 @@ class Cliente:
 
     @pw.setter
     def pw(self, pw):
+        if not isinstance(pw, str):
+            raise TypeError("la passdword deve essere una stringa")
+        if not 6 <= len(pw) <=12:
+            raise GenericError("La password deve essere compresa fra 6 e 12 caratteri")
+        if pw.isdecimal():
+            raise ValueError("la password non può contenere solo numeri")
+        if pw.isalpha():
+            raise ValueError("la password non può contere solo lettere")
+        if pw.isalnum():
+            raise ValueError("la password deve contenere almeno un carattere speciale")
+        if " " in pw:
+            raise ValueError("la password non può contenere spazi")
         self.__pw = pw
 
-    def visualizzaEstratto(self, banca: ePortfolio, conto: Conto):
+    def visualizzaEstratto(self, banca, conto):
         myconto = banca.lista_conti[conto.IBAN]
         if myconto.checkowner(self):
             estratto = myconto.estrattoconto
             print(estratto)
 
-    def trasferimento(self, token: str, banca: ePortfolio, IBAN: str, amount: float):
+    def trasferimento(self, token: str, banca, IBAN: str, amount: float):
         if token == "esterno":
             banca.bonificoesterno(amount)
         elif token == "interno":
