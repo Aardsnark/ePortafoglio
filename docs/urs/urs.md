@@ -79,7 +79,7 @@ La
 | Categoria | Obbiettivo |
 | ----------- | ---------- | 
 | Cliente | Accedere al conto corrente tramite credenziali, trasferire e ricevere denaro, visualizzare estratto conto |
-| Direzione | Creare e cancellare profili aziendali e conti correnti |
+| Amministrativo | Creare e cancellare profili aziendali e conti correnti |
 | Aziende Esterne | Ricevere ed effettuare operazioni di trasferimento di denare da e verso conti dell'azienda ePortafoglio |
 
 <a name="sp3.2"></a>
@@ -106,7 +106,7 @@ La
 | 1.5.0 |  Il cliente può chiudere il suo conto |M|
 
 
-#### 3.2.2 Requisiti Funzionali Direzione
+#### 3.2.2 Requisiti Funzionali Amministrativo
 | ID | Descrizione | Priorità |
 | --------------- | ----------- | ---------- | 
 | 2.0 |  La Direzione può creare un conto corrente con codice univoco |M|
