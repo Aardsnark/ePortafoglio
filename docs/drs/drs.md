@@ -172,9 +172,7 @@ specifications    </p>
 
 #### <a name="od"></a>  4.1.2 Object diagram
 <details> 
-    <summary> Put a summary of the section
-    </summary>
-    <p>This sub section should describe ...</p>
+	[![SequenzaEsame](https://github.com/Aardsnark/ePortafoglio/blob/main/docs/drs/imgs/SequenzaEsame.png)]
 </details>
 
 #### <a name="dm"></a>  4.2 Dynamic Models
